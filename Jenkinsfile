@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+//                 sh 'mvn --version'
+                sh 'javac src/main/java/Main.java'
             }
         }
     }
